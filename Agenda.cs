@@ -6,7 +6,7 @@ namespace Aula31Whatsapp
     public class Agenda : IAgenda
     {
         List<Contato> contatos = new List<Contato>();
-        public const string PATH = "Database/Produto.csv";
+        private const string PATH = "Database/Contato.csv";
 
         
         public Agenda(){
@@ -21,8 +21,6 @@ namespace Aula31Whatsapp
             }
 
         }
-        
-        
         
         public void Cadastrar(Contato Contato){
             var linha = new string[] {PrepararLinhaCSV(Contato)};
